@@ -1,85 +1,151 @@
 body {
-  background-color: azure;
+  background-color: antiquewhite;
   text-align: center;
 }
 
-/* in cross axis you still have to add the display:flex then you can add the align-tems
-you also need to add height so the items(children) can move inside the container */
-.container-one {
-  /* this will make the parent container and children to start right at the border of the body */
+/* the container-one is the parent and the child-one are the children,
+you need to set the parent first to display flex then you can make the children move
+  (flex-direction)
+  -- */
+/* .container-one {
   display: flex;
+  flex-direction: column;
+  text-align: center;
   border: 1px solid red;
-  height: 200px;
-  align-items: flex-start;
-}
-
-.child-one {
-  border: 5px solid pink;
-  margin: 5px;
   padding: 10px;
 }
 
-.container-two {
-  display: flex;
-  border: 1px solid blue;
-  height: 100px;
-  align-items: flex-end;
-}
+.container-one .child-one {
+  float: right;
+  border: 1px solid black;
+  margin: 5px;
+  background-color: pink;
+} */
 
+/* this is the second parent container that shows flex-direction row */
+/* .container-two {
+  display: flex;
+  flex-direction: row;
+  text-align: center; */
+/* the parent container can have a border or not */
+/* border: 1px solid blue;  */
+/* } */
+/* 
 .child-two {
-  border: 3px solid green;
+  border: 1px solid green;
+  padding: 5px;
   margin: 5px;
-  padding: 10px;
-}
+} */
 
-/* to kind of remove the border, choose the same color as the 
-body so that in your eyes it is borderless. align-items only work
-when you add a border and height */
-
-.container-three {
+/* this is the third parent container that shows flex-direction row-reverse, with this direction the children 
+will start at the end of the page */
+/* .container-three {
   display: flex;
-  border: 1px solid azure;
-  height: 200px;
-  align-items: center;
-}
+  text-align: center;
+  flex-direction: row-reverse; */
+/* the parent container can have a border or not */
+/* border: 1px solid blue;  */
+/* } */
 
-.child-three {
-  border: 5px solid yellow;
+/* .child-three {
+  border: 1px solid green;
+  padding: 5px;
   margin: 5px;
-  padding: 10px;
-}
+} */
+
+/* you need to add flex-wrap so that the children will not style when you add style to the parent */
 
 .container-four {
   display: flex;
-  border: 1px solid yellowgreen;
-  height: 100px;
-  align-items: stretch;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  border: 1px solid blue;
+  height: 200px;
+  width: 500px;
+  /* the parent container can have a border or not */
 }
 
 .child-four {
-  border: 3px solid red;
-  background-color: blueviolet;
+  border: 1px solid green;
+  background-color: #e6c736;
+  padding: 15px;
   margin: 5px;
-  padding: 10px;
 }
-
-/* baseline means that the selected children will start at the top
-then you can style a specific element */
 
 .container-five {
   display: flex;
-  border: 5px solid black;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  /* the parent container can have a border or not, if you add border to the parent element
+    it will occupy the whole page */
+  border: 1px solid blue;
   height: 200px;
-  align-items: baseline;
+  width: 500px;
 }
 
 .child-five {
-  border: 1px solid black;
+  border: 1px solid #e6c736;
+  background-color: #e6c736;
+  padding: 15px;
   margin: 5px;
-  padding: 10px;
 }
 
-.child-five:nth-child(3) {
-  border: 4px solid red;
-  font-size: 30px;
+.container-six {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-end;
+  /* the parent container can have a border or not, if you add border to the parent element
+      it will occupy the whole page */
+  border: 1px dotted blue;
+  height: 300px;
+  width: 500px;
+}
+
+.child-six {
+  border: 1px solid #e6c736;
+  background-color: #e6c736;
+  padding: 35px;
+  margin: 5px;
+}
+
+.container-seven {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  /* the parent container can have a border or not, if you add border to the parent element
+        it will occupy the whole page */
+  border: 3px solid black;
+  height: 200px;
+  width: 300px;
+}
+
+.child-seven {
+  border: 1px solid #4fe6d2;
+  background-color: #4fe6d2;
+  padding: 15px;
+  margin: 5px;
+}
+
+.container-eight {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+  /* the parent container can have a border or not, if you add border to the parent element
+      it will occupy the whole page */
+  border: 4px solid black;
+  height: 300px;
+  width: 300px;
+}
+
+.child-eight {
+  border: 1px solid #8884f0;
+  background-color: #8884f0;
+  padding: 25px;
+  margin: 5px;
 }

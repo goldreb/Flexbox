@@ -24,6 +24,8 @@ whithin the parent container */
   padding: 10px;
 }
 
+/* you can also short hand flex-direction and flex-wrap into one called flex-flow: row wrap */
+
 .container-two {
   display: flex;
   flex-direction: row;

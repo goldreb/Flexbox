@@ -1,143 +1,85 @@
 body {
-  background-color: antiquewhite;
+  background-color: azure;
+  text-align: center;
 }
 
-/* the container-one is the parent and the child-one are the children,
-you need to set the parent first to display flex then you can make the children move
-  (flex-direction)
-  -- */
+/* in cross axis you still have to add the display:flex then you can add the align-tems
+you also need to add height so the items(children) can move inside the container */
 .container-one {
+  /* this will make the parent container and children to start right at the border of the body */
   display: flex;
-  flex-direction: column;
-  text-align: center;
   border: 1px solid red;
+  height: 200px;
+  align-items: flex-start;
+}
+
+.child-one {
+  border: 5px solid pink;
+  margin: 5px;
   padding: 10px;
 }
 
-.container-one .child-one {
-  float: right;
-  border: 1px solid black;
-  margin: 5px;
-  background-color: pink;
-}
-
-/* this is the second parent container that shows flex-direction row */
 .container-two {
   display: flex;
-  flex-direction: row;
-  text-align: center;
-  /* the parent container can have a border or not */
-  /* border: 1px solid blue;  */
+  border: 1px solid blue;
+  height: 100px;
+  align-items: flex-end;
 }
 
 .child-two {
-  border: 1px solid green;
-  padding: 5px;
+  border: 3px solid green;
   margin: 5px;
+  padding: 10px;
 }
 
-/* this is the third parent container that shows flex-direction row-reverse, with this direction the children 
-will start at the end of the page */
+/* to kind of remove the border, choose the same color as the 
+body so that in your eyes it is borderless. align-items only work
+when you add a border and height */
+
 .container-three {
   display: flex;
-  text-align: center;
-  flex-direction: row-reverse;
-  /* the parent container can have a border or not */
-  /* border: 1px solid blue;  */
+  border: 1px solid azure;
+  height: 200px;
+  align-items: center;
 }
 
 .child-three {
-  border: 1px solid green;
-  padding: 5px;
+  border: 5px solid yellow;
   margin: 5px;
+  padding: 10px;
 }
 
-/* this is the fourth parent that shows the property justify-content */
 .container-four {
   display: flex;
-  text-align: center;
-  flex-direction: row-reverse;
-  justify-content: center;
-  /* the parent container can have a border or not */
-  /* border: 1px solid blue;  */
+  border: 1px solid yellowgreen;
+  height: 100px;
+  align-items: stretch;
 }
 
 .child-four {
-  border: 1px solid green;
-  background-color: #e6c736;
-  padding: 25px;
+  border: 3px solid red;
+  background-color: blueviolet;
   margin: 5px;
+  padding: 10px;
 }
 
-/* this is the fifth parent that shows the property justify-content: flex-start */
+/* baseline means that the selected children will start at the top
+then you can style a specific element */
+
 .container-five {
   display: flex;
-  text-align: center;
-  flex-direction: row;
-  justify-content: flex-start;
-  /* the parent container can have a border or not, if you add border to the parent element
-    it will occupy the whole page */
-  border: 1px solid blue;
+  border: 5px solid black;
+  height: 200px;
+  align-items: baseline;
 }
 
 .child-five {
-  border: 1px solid #e6c736;
-  background-color: #e6c736;
-  padding: 15px 5px 35px;
+  border: 1px solid black;
   margin: 5px;
+  padding: 10px;
 }
 
-/* this is the six parent that shows the property justify-content: flex-end */
-.container-six {
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  justify-content: flex-end;
-  /* the parent container can have a border or not, if you add border to the parent element
-      it will occupy the whole page */
-  border: 1px dotted blue;
-}
-
-.child-six {
-  border: 1px solid #e6c736;
-  background-color: #e6c736;
-  padding: 15px 5px 35px;
-  margin: 5px;
-}
-
-/* this is the seven parent that shows the property justify-content: space-around, 
-the container is space around each container - look likes having a built-in margin  */
-.container-seven {
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  justify-content: space-around;
-  /* the parent container can have a border or not, if you add border to the parent element
-        it will occupy the whole page */
-  border: 3px solid black;
-}
-
-.child-seven {
-  border: 1px solid #4fe6d2;
-  background-color: #4fe6d2;
-  padding: 15px 15px 35px;
-  margin: 5px;
-}
-
-/* this is the eight parent that shows the property justify-content: space-between, 
-  */
-.container-eight {
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  justify-content: space-between;
-  /* the parent container can have a border or not, if you add border to the parent element
-      it will occupy the whole page */
-  border: 4px solid black;
-}
-
-.child-eight {
-  border: 1px solid #8884f0;
-  background-color: #8884f0;
-  padding: 35px 35px 35px;
+.child-five:nth-child(3) {
+  border: 4px solid red;
+  font-size: 30px;
 }
