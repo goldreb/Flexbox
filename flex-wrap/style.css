@@ -1,0 +1,58 @@
+body {
+  background-color: lightpink;
+  text-align: center;
+}
+
+/* when a children selected overflows in a box, you need to use flex-wrap so that the children will container
+whithin the parent container */
+
+/* below is an example of children not containing in the parent container */
+.container-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
+  border: 1px solid saddlebrown;
+  height: 100px;
+  width: 400px;
+}
+
+.child-one {
+  border: 1px solid seagreen;
+  margin: 5px;
+  padding: 10px;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid slateblue;
+  height: 100px;
+  width: 400px;
+}
+
+.child-two {
+  border: 1px solid seagreen;
+  margin: 5px;
+  padding: 10px;
+}
+
+.container-three {
+  display: flex;
+  flex-direction: row;
+  background-color: seashell;
+  justify-content: space-between;
+  border: 1px solid slategray;
+  height: 100px;
+  width: 400px;
+  flex-wrap: wrap-reverse;
+}
+
+.child-three {
+  border: 1px solid slateblue;
+  margin: 5px;
+  padding: 10px;
+}
