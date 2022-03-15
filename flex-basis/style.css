@@ -1,0 +1,71 @@
+body {
+  background-color: blanchedalmond;
+  text-align: center;
+}
+
+.container-one {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rebeccapurple;
+  width: 800px;
+}
+
+/* if you have width and height specified in your container, then add flex-basis, the flex-basis
+will have priority and will apply wathever is set on it.  */
+.child-one {
+  float: right;
+  border: 1px solid orangered;
+  margin: 5px;
+  /* width: 200px; */
+  flex-basis: auto;
+  padding: 25px;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rosybrown;
+  width: 800px;
+}
+/* you can add flex-grow if you want to fill the space in the container */
+.child-two {
+  float: right;
+  border: 1px solid cadetblue;
+  margin: 5px;
+  flex-basis: auto;
+  padding: 15px;
+}
+
+.child-two:nth-child(1) {
+  flex-basis: 200px;
+}
+
+.child-two:nth-child(2) {
+  flex-basis: 300px;
+}
+.child-two:nth-child(4) {
+  flex-basis: 100px;
+}
+
+.container-three {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  border: 1px solid cadetblue;
+}
+
+.child-three {
+  float: right;
+  border: 4px solid gold;
+  margin: 5px;
+  padding: 10px;
+  flex-basis: auto;
+}
+
+.child-three:nth-child(1) {
+  flex-basis: 25%;
+}
+
+.child-three:nth-child(4) {
+  flex-basis: 50%;
+}

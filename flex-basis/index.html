@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Flexbox</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>----Flex-Basis----</h1>
+
+    <h3>Default: flex-basis: auto</h3>
+
+    <!-- the container is the parent and the div are the children, 
+     -->
+    <section class="container-one">
+      <div class="child-one">1 flex-basis: auto</div>
+      <div class="child-one">2 flex-basis: auto</div>
+      <div class="child-one">3 flex-basis: auto</div>
+      <div class="child-one">4 flex-basis: auto</div>
+      <!-- <div class="child-one">5</div>
+        <div class="child-one">6</div>
+        <div class="child-one">7</div>
+        <div class="child-one">8</div>
+        <div class="child-one">9</div>
+        <div class="child-one">10</div>
+        <div class="child-one">11</div>
+        <div class="child-one">12</div> -->
+    </section>
+
+    <!-- example of how to contain the children in the parent container that has specified border -->
+    <h3>Different flex-basis values(act like width on the main axis</h3>
+
+    <section class="container-two">
+      <div class="child-two">1 flex-basis: 200px</div>
+      <div class="child-two">2 flex-basis: 300px</div>
+      <div class="child-two">3 flex-basis: auto</div>
+      <div class="child-two">4 flex-basis: 100px</div>
+      <!-- <div class="child-two">5 flex-basis: auto</div>
+      <div class="child-two">6 flex-basis: auto</div> -->
+      <!-- <div class="child-two">7</div>
+        <div class="child-two">8</div>
+        <div class="child-two">9</div>
+        <div class="child-two">10</div>
+        <div class="child-two">11</div>
+        <div class="child-two">12</div> -->
+    </section>
+
+    <h3>
+      Percent values (note that it's necessary to combine with (flex-shrink))
+    </h3>
+    <section class="container-three">
+      <div class="child-three">1 flex-basis: 25%</div>
+      <div class="child-three">2 flex-basis: auto</div>
+      <div class="child-three">3 flex-basis: auto</div>
+      <div class="child-three">4 flex-basis: 50%</div>
+      <!-- <div class="child-three">5 flex-basis: auto</div> -->
+      <!-- <div class="child-three">6</div>
+        <div class="child-three">7</div>
+        <div class="child-three">8</div>
+        <div class="child-three">9</div>
+        <div class="child-three">10</div>
+        <div class="child-three">11</div>
+        <div class="child-three">12</div> -->
+    </section>
+
+    <!-- <h3>
+      3 gets 2/5 (40%) of remaining space (does not mean that 3 will be twice as
+      wide)
+    </h3>
+    <section class="container-four">
+      <div class="child-four">1 flex-shrink: 1</div>
+      <div class="child-four">2 flex-shrink: 1</div>
+      <div class="child-four">3 flex-shrink: 1</div>
+      <div class="child-four">4 flex-shrink: 1</div>
+    </section>
+
+    <h3>3 gets 4/7 of remaining space</h3>
+    <section class="container-five">
+      <div class="child-five">1 flex-shrink: 1</div>
+      <div class="child-five">2 flex-shrink: 1</div>
+      <div class="child-five">3 flex-shrink: 1/div>
+      <div class="child-five">4 flex-shrink: 1</div>
+    </section> -->
+
+    <!-- <h3>justify-content: flex-end</h3>
+    <section class="container-six">
+        <div class="child-six">1</div>
+        <div class="child-six">2</div>
+        <div class="child-six">3</div>
+        <div class="child-six">4</div>
+    </section>
+
+
+    <h3>justify-content: space-around</h3>
+    <section class="container-seven">
+        <div class="child-seven">1</div>
+        <div class="child-seven">2</div>
+        <div class="child-seven">3</div>
+        <div class="child-seven">4</div>
+    </section>
+
+    <h3>justify-content: space-between</h3>
+    <section class="container-eight">
+        <div class="child-eight">1</div>
+        <div class="child-eight">2</div>
+        <div class="child-eight">3</div>
+        <div class="child-eight">4</div> 
+    </section>-->
+  </body>
+</html>
