@@ -1,0 +1,103 @@
+body {
+  background-color: beige;
+  text-align: center;
+}
+
+.container-one {
+  display: flex;
+  flex-direction: row;
+  /* this are not needed for flex-grow */
+  /* justify-content: flex-start;
+  align-items: flex-start;
+  height: 300px; */
+  width: 800px;
+  border: 1px solid firebrick;
+}
+
+.child-one {
+  float: right;
+  width: 100px;
+  margin: 0;
+  border: 1px solid teal;
+  padding: 15px;
+
+  flex-grow: 0;
+}
+
+/* the default value for flex-grow: 0, by adding 1 the children in the container will 
+  fill all the space in the parent container*/
+
+.container-two {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  border: 1px solid mediumslateblue;
+}
+
+.child-two {
+  float: right;
+  width: 100px;
+  border: 1px solid mediumvioletred;
+  flex-grow: 0;
+  margin: 0;
+  padding: 25px;
+}
+
+.child-two:nth-child(3) {
+  flex-grow: 1;
+}
+
+.container-three {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  /* border: 1px solid hotpink; */
+}
+
+.child-three {
+  float: right;
+  width: 100px;
+  border: 1px solid sienna;
+  flex-grow: 1;
+  padding: 25px;
+  margin: 15px;
+}
+
+.container-four {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+}
+
+.child-four {
+  float: right;
+  width: 100px;
+  border: 1px solid blue;
+  padding: 25px;
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.child-four:nth-child(3) {
+  flex-grow: 2;
+}
+
+.container-five {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  border: 3px solid black;
+}
+
+.child-five {
+  float: right;
+  width: 100px;
+  border: 1px solid red;
+  flex-grow: 1;
+  padding: 25px;
+  margin: 10px;
+}
+
+.child-five:nth-child(3) {
+  flex-grow: 4;
+}
