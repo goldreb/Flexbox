@@ -1,0 +1,62 @@
+body {
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.container-one {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  border: 1px solid green;
+}
+
+/* if you set flex-shrink to flex-shrink: 0, then it will not allow to shrink. the default for flex-shrink: 1 */
+.child-one {
+  float: right;
+  width: 200px;
+  margin: 5px;
+  border: 1px solid pink;
+  flex-shrink: 1;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  border: 1px solid saddlebrown;
+}
+
+.child-two {
+  float: right;
+  width: 200px;
+  border: 1px solid magenta;
+  flex-shrink: 1;
+  margin: 5px;
+}
+
+.child-two:nth-child(3) {
+  flex-shrink: 0;
+}
+
+.child-two:nth-child(4),
+.child-two:nth-child(5) {
+  flex-shrink: 0;
+}
+
+.container-three {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  border: 1px solid beige;
+}
+
+.child-three {
+  width: 200px;
+  border: 1px solid blue;
+  flex-shrink: 1;
+  margin: 5px;
+}
+
+.child-three:nth-child(3) {
+  flex-shrink: 5;
+}
