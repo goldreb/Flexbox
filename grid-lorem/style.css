@@ -8,8 +8,6 @@ body {
   padding: 50px;
 }
 
-
-
 .container > * {
   justify-content: space-between;
   padding: 10px;
@@ -27,8 +25,8 @@ body {
 
 /* check examples of flex-grow | flex-shrink | flex-basis */
 
-  /* flex-grow | flex-shrink | flex-basis */
-  /* flex: 0 2 calc(50% - 20px); */
+/* flex-grow | flex-shrink | flex-basis */
+/* flex: 0 2 calc(50% - 20px); */
 
 /* .half {
   border: 1px solid red;
@@ -40,8 +38,7 @@ body {
   
 } */
 
-
-  /* flex: 0 1 calc(25%- 20px); */
+/* flex: 0 1 calc(25%- 20px); */
 /* .fourth {
   border: 1px solid blue;
 
@@ -51,9 +48,7 @@ body {
   flex-basis: 15%;
 } */
 
-
-
-  /* flex: 0 1 calc(33.33333% - 20px); */
+/* flex: 0 1 calc(33.33333% - 20px); */
 /* .third {
   border: 1px solid black;
   width: 32.2%;
@@ -76,8 +71,8 @@ body {
   flex: 0 1 100%;
 } */
 
-  /* flex-grow | flex-shrink | flex-basis */
-    /* flex: 0 2 calc(50% - 20px); */
+/* flex-grow | flex-shrink | flex-basis */
+/* flex: 0 2 calc(50% - 20px); */
 
 /* .fifth {
     border: 1px solid red;
@@ -89,8 +84,8 @@ body {
 
 } */
 
-
 /* -------------------gutters---------------- */
+/* the mistake i did in the first try was not adding addition div to the second div that has a class="half\" */
 
 .grid {
   display: flex;
@@ -99,8 +94,6 @@ body {
 
 .gutters {
   margin: -10px 0 10px -10px;
-
-  
 }
 
 .gutters > div {
@@ -128,7 +121,41 @@ body {
   border: 2px solid brown;
 }
 
-.sixth{
+.sixth {
   flex-basis: 16.66666%;
-  border: 1px solid black
+  border: 1px solid black;
+}
+
+/* -------------center--------------- */
+
+.vcenter {
+  display: flex;
+  border: 1px solid green;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+/* this will add space-around the words, if you want more words in the container */
+.secondcenter {
+  display: flex;
+  border: 1px solid green;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+nav {
+  height: 100px;
+}
+
+li {
+  list-style-type: none;
+  flex-basis: 25%;
 }
