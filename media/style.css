@@ -1,0 +1,64 @@
+/* tulips */
+
+.media {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* the default value of the image is flex-stretch so  with align-self: flex-start, it will just remain in the start and not stretch */
+
+.figure {
+  flex: 1 1 40%;
+  align-self: flex-start;
+}
+
+/* flex-grow| flex-shrink| flex-basis(%) */
+
+.media-body {
+  flex: 1 1 60%;
+}
+
+p {
+  margin: 0 10px 20px 10px;
+}
+
+/* nesting */
+
+/* with nesting you can create another image and description inside the main component */
+.media-nesting {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.figure-nest {
+  flex: 1 1 40%;
+  align-self: flex-start;
+  order: 0;
+}
+
+.media-bodyNest {
+  flex: 1 1 60%;
+}
+
+/* -------------ROSE---------- */
+
+.mediaTwo {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/* the default value of the image is flex-stretch so  with align-self: flex-start, it will just remain in the start and not stretch */
+
+/* by adding order: 1. the order of the image is reverse to the image of the flower-tulip */
+/* if you want to move the image to center or end or start you can change it by changing the align-self: */
+.figureTwo {
+  flex: 1 1 30%;
+  align-self: flex-start;
+  order: 1;
+}
+
+/* flex-grow| flex-shrink| flex-basis(%) */
+
+.media-bodyTwo {
+  flex: 1 1 70%;
+}
