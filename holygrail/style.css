@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: pink;
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* by adding flex-grow|flex-shrink to it makes the content more fluid. if you only use the flex-basis then only the middle content is fluid and not the sidebars */
+
+#content {
+  flex: 4 1 0%;
+}
+
+#sidebarOne {
+  /* flex-basis: 200px; */
+  flex: 1 1 0%;
+  order: -1;
+}
+
+#sidebarTwo {
+  /* flex-basis: 150px; */
+  flex: 1 1 0%;
+}
+
+#header,
+#footer {
+  text-align: center;
+  padding: 20px;
+}
+
+#main * {
+  padding: 20px;
+  border: 1px solid white;
+}
